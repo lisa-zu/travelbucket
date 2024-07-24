@@ -20,6 +20,7 @@
 		30DF5A8E2C51651000FE9AAE /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A8D2C51651000FE9AAE /* BucketItem.swift */; };
 		30DF5A912C51683100FE9AAE /* BucketsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A902C51683100FE9AAE /* BucketsList.swift */; };
 		30DF5A932C51686F00FE9AAE /* BucketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A922C51686F00FE9AAE /* BucketsListViewModel.swift */; };
+		30DF5A9A2C516BAF00FE9AAE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30DF5A992C516BAF00FE9AAE /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		30DF5A8D2C51651000FE9AAE /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		30DF5A902C51683100FE9AAE /* BucketsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsList.swift; sourceTree = "<group>"; };
 		30DF5A922C51686F00FE9AAE /* BucketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsListViewModel.swift; sourceTree = "<group>"; };
+		30DF5A992C516BAF00FE9AAE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		30A9D9F82C4FFED800E86AA3 /* Travelbuckets */ = {
 			isa = PBXGroup;
 			children = (
+				30DF5A992C516BAF00FE9AAE /* GoogleService-Info.plist */,
 				30DF5A882C51460700FE9AAE /* Model */,
 				30A9DA242C5002F600E86AA3 /* Features */,
 				30A9D9F92C4FFED800E86AA3 /* TravelbucketsApp.swift */,
@@ -286,6 +289,7 @@
 			files = (
 				30A9DA022C4FFED900E86AA3 /* Preview Assets.xcassets in Resources */,
 				30A9D9FE2C4FFED900E86AA3 /* Assets.xcassets in Resources */,
+				30DF5A9A2C516BAF00FE9AAE /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

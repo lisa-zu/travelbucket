@@ -16,6 +16,10 @@
 		30A9DA182C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA172C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift */; };
 		30A9DA272C50030900E86AA3 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA262C50030900E86AA3 /* CreateView.swift */; };
 		30DF5A8A2C51461000FE9AAE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A892C51461000FE9AAE /* Country.swift */; };
+		30DF5A8C2C515ACB00FE9AAE /* HashableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A8B2C515ACB00FE9AAE /* HashableImage.swift */; };
+		30DF5A8E2C51651000FE9AAE /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A8D2C51651000FE9AAE /* BucketItem.swift */; };
+		30DF5A912C51683100FE9AAE /* BucketsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A902C51683100FE9AAE /* BucketsList.swift */; };
+		30DF5A932C51686F00FE9AAE /* BucketsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A922C51686F00FE9AAE /* BucketsListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		30A9DA172C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelbucketsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		30A9DA262C50030900E86AA3 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		30DF5A892C51461000FE9AAE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		30DF5A8B2C515ACB00FE9AAE /* HashableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashableImage.swift; sourceTree = "<group>"; };
+		30DF5A8D2C51651000FE9AAE /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
+		30DF5A902C51683100FE9AAE /* BucketsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsList.swift; sourceTree = "<group>"; };
+		30DF5A922C51686F00FE9AAE /* BucketsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketsListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +146,7 @@
 		30A9DA242C5002F600E86AA3 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				30DF5A8F2C51682100FE9AAE /* Buckets */,
 				30A9DA252C5002FB00E86AA3 /* Create */,
 			);
 			path = Features;
@@ -155,8 +164,19 @@
 			isa = PBXGroup;
 			children = (
 				30DF5A892C51461000FE9AAE /* Country.swift */,
+				30DF5A8B2C515ACB00FE9AAE /* HashableImage.swift */,
+				30DF5A8D2C51651000FE9AAE /* BucketItem.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30DF5A8F2C51682100FE9AAE /* Buckets */ = {
+			isa = PBXGroup;
+			children = (
+				30DF5A902C51683100FE9AAE /* BucketsList.swift */,
+				30DF5A922C51686F00FE9AAE /* BucketsListViewModel.swift */,
+			);
+			path = Buckets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30DF5A8E2C51651000FE9AAE /* BucketItem.swift in Sources */,
+				30DF5A912C51683100FE9AAE /* BucketsList.swift in Sources */,
+				30DF5A932C51686F00FE9AAE /* BucketsListViewModel.swift in Sources */,
+				30DF5A8C2C515ACB00FE9AAE /* HashableImage.swift in Sources */,
 				30A9D9FC2C4FFED800E86AA3 /* ContentView.swift in Sources */,
 				30A9DA272C50030900E86AA3 /* CreateView.swift in Sources */,
 				30DF5A8A2C51461000FE9AAE /* Country.swift in Sources */,

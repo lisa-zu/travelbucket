@@ -13,18 +13,18 @@ struct ContentView: View {
     
     var body: some View {
         NavigationStack {
-            Text("Hallo")
-                .navigationTitle("Travelbuckets")
-                .toolbar {
-                    ToolbarItem(id: "add_bucket", placement: .topBarTrailing) {
-                        Button("Add", systemImage: "text.badge.plus") {
-                            isShowingCreationSheet.toggle()
-                        }
+            BucketsList()
+            .navigationTitle("Travelbuckets")
+            .toolbar {
+                ToolbarItem(id: "add_bucket", placement: .topBarTrailing) {
+                    Button("Add", systemImage: "text.badge.plus") {
+                        isShowingCreationSheet.toggle()
                     }
                 }
-                .sheet(isPresented: $isShowingCreationSheet, content: {
-                    CreateView()
-                })
+            }
+            .sheet(isPresented: $isShowingCreationSheet, content: {
+                CreateView()
+            })
         }
     }
 }

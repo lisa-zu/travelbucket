@@ -14,6 +14,8 @@
 		30A9DA0C2C4FFED900E86AA3 /* TravelbucketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA0B2C4FFED900E86AA3 /* TravelbucketsTests.swift */; };
 		30A9DA162C4FFED900E86AA3 /* TravelbucketsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA152C4FFED900E86AA3 /* TravelbucketsUITests.swift */; };
 		30A9DA182C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA172C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift */; };
+		30A9DA272C50030900E86AA3 /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A9DA262C50030900E86AA3 /* CreateView.swift */; };
+		30DF5A8A2C51461000FE9AAE /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30DF5A892C51461000FE9AAE /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		30A9DA112C4FFED900E86AA3 /* TravelbucketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravelbucketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A9DA152C4FFED900E86AA3 /* TravelbucketsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelbucketsUITests.swift; sourceTree = "<group>"; };
 		30A9DA172C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelbucketsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		30A9DA262C50030900E86AA3 /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		30DF5A892C51461000FE9AAE /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 		30A9D9F82C4FFED800E86AA3 /* Travelbuckets */ = {
 			isa = PBXGroup;
 			children = (
+				30DF5A882C51460700FE9AAE /* Model */,
+				30A9DA242C5002F600E86AA3 /* Features */,
 				30A9D9F92C4FFED800E86AA3 /* TravelbucketsApp.swift */,
 				30A9D9FB2C4FFED800E86AA3 /* ContentView.swift */,
 				30A9D9FD2C4FFED900E86AA3 /* Assets.xcassets */,
@@ -127,6 +133,30 @@
 				30A9DA172C4FFED900E86AA3 /* TravelbucketsUITestsLaunchTests.swift */,
 			);
 			path = TravelbucketsUITests;
+			sourceTree = "<group>";
+		};
+		30A9DA242C5002F600E86AA3 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				30A9DA252C5002FB00E86AA3 /* Create */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		30A9DA252C5002FB00E86AA3 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				30A9DA262C50030900E86AA3 /* CreateView.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		30DF5A882C51460700FE9AAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30DF5A892C51461000FE9AAE /* Country.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,11 +240,12 @@
 			};
 			buildConfigurationList = 30A9D9F12C4FFED800E86AA3 /* Build configuration list for PBXProject "Travelbuckets" */;
 			compatibilityVersion = "Xcode 14.0";
-			developmentRegion = en;
+			developmentRegion = de;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				de,
 			);
 			mainGroup = 30A9D9ED2C4FFED800E86AA3;
 			productRefGroup = 30A9D9F72C4FFED800E86AA3 /* Products */;
@@ -260,6 +291,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30A9D9FC2C4FFED800E86AA3 /* ContentView.swift in Sources */,
+				30A9DA272C50030900E86AA3 /* CreateView.swift in Sources */,
+				30DF5A8A2C51461000FE9AAE /* Country.swift in Sources */,
 				30A9D9FA2C4FFED800E86AA3 /* TravelbucketsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,8 +465,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -442,7 +475,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.Travelbuckets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -470,8 +504,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -480,7 +514,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.Travelbuckets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +537,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.TravelbucketsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -525,7 +561,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.TravelbucketsTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -547,7 +584,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.TravelbucketsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,7 +607,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = craftcode.TravelbucketsUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
